@@ -4,9 +4,9 @@ ROOTDIR="/vagrant"
 
 . `dirname $0`/setenv.bash
 
-HBASE_URL="http://archive.apache.org/dist/hbase/hbase-$HBASE_VER/$HBASE_ARCHIVE"
-ANT_URL="http://mirror.catn.com/pub/apache/ant/binaries/$ANT_ARCHIVE"
-NUTCH_URL="http://mirror.gopotato.co.uk/apache/nutch/2.2.1/$NUTCH_ARCHIVE"
+HBASE_URL="http://archive.apache.org/dist/hbase/hbase-0.90.4/hbase-0.90.4.tar.gz"
+ANT_URL="http://mirror.nexcess.net/apache//ant/binaries/apache-ant-1.9.4-bin.tar.gz"
+NUTCH_URL="https://archive.apache.org/dist/nutch/2.2.1/apache-nutch-2.2.1-src.tar.gz"
 
 cd $ROOTDIR/downloads
 

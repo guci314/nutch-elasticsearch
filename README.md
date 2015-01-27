@@ -10,10 +10,17 @@ Installation
 
         vagrant up
         vagrant ssh
+		
+		after login to vm run : sudo yum upgrade ca-certificates --disablerepo=epel
+		then exit ssh
+		
+		vagrant reload  --provision
+		
         cd /vagrant
         
 1. Download ant, nutch and hbase:
 
+        sed -i 's/\r//' bin/wget-deps.bash
         bin/wget-deps.bash
 
 1. Check elasticsearch is running:
@@ -26,7 +33,7 @@ Installation
 
 1. Run `build-nutch.bash` to build using ant/ivy and install config file:
 
-        /vagrant/build-nutch.bash
+        /vagrant/bin/build-nutch.bash
 
 1. Start hbase:
 
