@@ -7,8 +7,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos-64-x64-vbox4210"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
   config.vm.boot_timeout=3000
-  config.vm.network :forwarded_port, guest: 9200, host: 9200
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 9200, host: 9201
+  config.vm.network :forwarded_port, guest: 80, host: 8081
 
   config.vm.network :private_network, ip: "192.168.33.65"
 

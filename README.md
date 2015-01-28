@@ -47,6 +47,13 @@ Installation
 1. Run the nutch crawler:
 
         cd /opt/apache-nutch-2.2.1/runtime/local
+		
+		add following config to conf/nutch-default.xml
+		<property>
+ <name>http.agent.name</name>
+ <value>My Nutch Spider</value>
+</property>
+
         /vagrant/bin/index-url.bash /vagrant/conf/urls.txt
 
 1. Test:
